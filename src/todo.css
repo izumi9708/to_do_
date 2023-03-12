@@ -1,0 +1,187 @@
+html {
+  font-size: 62.5%;
+}
+body *{
+  font-size: 1.6rem ;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+      -webkit-overflow-scrolling: touch;
+font-family: "MS Pゴシック" , sans-serif; ;
+}
+body {
+margin : 0 ;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* main  */
+header {
+    height: 40px;
+    background-color: #0F172A;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.main-content {
+  padding-bottom: 80px;
+}
+.incomplete-item {
+  padding: 15px 10px;
+  border-bottom: solid 1px #dedede;
+  font-weight: bold;
+  position: relative;
+}
+.incomplete-item input {
+  margin-right: 10px;
+}
+.wrap-title {
+    background-color: #e7e7e7;
+    padding: 5px;
+    font-size: 1.4rem;
+    color: #7e7e7e;
+    border: solid 1px #dedede;
+}
+.complete-item {
+    padding: 15px 10px;
+    border-bottom: solid 1px #dedede;
+    font-weight: bold;
+    position: relative;
+}
+.no-incomplete {
+  padding: 15px 10px;
+  font-weight: bold;
+}
+.no-complete {
+  padding: 15px 10px;
+  font-weight: bold;
+  border-bottom: solid 1px #dedede;
+}
+.delete-icon {
+    width: 18px;
+    position: absolute;
+    height: 18px;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.add-btn-wrap {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+.add-btn {
+    border: none;
+    background-color: #746AE8;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 15px -5px #777777;
+}
+.add-btn svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+/* modal  */
+.add-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: all .2s; */
+}
+.add-bg {
+  background-color: #09090959;
+  width: 100%;
+  height: 100vh;
+}
+.add-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: all .2s; */
+}
+.add-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.add-text {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 1.3rem;
+}
+.add-input {
+  text-align: center;
+}
+.add-input input {
+  border-radius: 5px;
+  border: solid 1px #afafaf;
+  background-color: #f4f4f4;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+.add-input input::placeholder {
+  font-size: 1.2rem;
+}
+.add-click-wrap {
+  margin-top: 20px;
+}
+.add-cancel {
+  width: 50%;
+    padding: 7px 0;
+    border-radius: 0 0 0 10px;
+    border: none;
+    border-top: solid 1px #b7b7b7;
+    background-color: #fff;
+    color: #2d80e3;
+    font-weight: bold;
+}
+.add-confirm {
+  width: 50%;
+  padding: 7px 0;
+  width: 50%;
+  border-radius: 0 0 10px 0;
+  background-color: #fff;
+  border: none;
+  border-top: solid 1px #b7b7b7;
+  border-left: solid 1px #b7b7b7;
+  color: #999999;
+    font-weight: bold;
+}
+.open-add-wrap {
+  visibility: visible;
+  opacity: 1;
+  /* transition: all .2s; */
+}
+.open-add-content {
+  visibility: visible;
+  opacity: 1;
+  /* transition: all .2s; */
+}
+.add-color {
+  color: #2d80e3;
+}
